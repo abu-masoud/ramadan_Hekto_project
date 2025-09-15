@@ -1,0 +1,147 @@
+.nav__bar {
+  font-family: "Lato", sans-serif;
+  padding: 47px 0;
+}
+
+.nav__bar .nav__links {
+  display: flex;
+  gap: 35px;
+}
+
+.nav__bar .nav__links a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #0d0e43;
+}
+
+.nav__bar .nav__links .active {
+  color: var(--primaryColor);
+}
+
+.nav__search {
+  border: 2px solid #e7e6ef;
+  border-radius: 2px;
+}
+
+.nav__search button {
+  padding: 8px 14px;
+  background-color: var(--primaryColor);
+}
+
+.nav__search form input,
+button {
+  border: none;
+  outline: none;
+}
+
+.nav__search form input {
+  width: 266px;
+  padding-left: 5px;
+}
+
+.ri-menu-line {
+  display: none;
+}
+
+/* end nav  */
+
+/* start footer */
+
+.footer {
+  font-family: "Lato", sans-serif;
+  padding: 104px 0;
+
+  background-color: #eeeffb;
+}
+
+.footer .row {
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.footer .left__side {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 34px;
+}
+
+.footer .left__side form {
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  display: flex;
+}
+
+.footer .left__side button {
+  background-color: var(--primaryColor);
+  color: #fff;
+}
+
+.footer .left__side input,
+.footer .left__side button {
+  border: none;
+  outline: none;
+  padding: 12px 19px;
+  border-radius: 3px;
+}
+
+.footer .left__side address {
+  color: #8a8fb9;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.footer .left__side address h4,
+.footer .left__side address p {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.footer .right__side {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
+.footer .right__side__items {
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+}
+
+.footer .right__side__items {
+  font-size: 22px;
+}
+
+.footer .right__side__items ul {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.footer .right__side__items ul a {
+  font-size: 16px;
+  color: #8a8fb9;
+}
+
+/* end footer */
+
+@media screen and (max-width: 1200px) {
+  .nav__bar .nav__links,
+  .nav__search {
+    display: none;
+  }
+
+  .ri-menu-line {
+    display: block;
+  }
+
+  .footer .left__side {
+    width: 100%;
+  }
+
+  .footer .right__side {
+  }
+}

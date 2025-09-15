@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primaryColor: #FB2E86;
+    --mainFont: "Lato", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    padding: 16px 40px;
+}
+
+.btn-primary {
+    background-color: var(--primaryColor);
+}
+
+.btn-succsess {
+    background-color: var();
+}

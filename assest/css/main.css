@@ -114,7 +114,9 @@ button {
 }
 
 .footer .right__side__items {
+  width: calc((100% - 160px) / 3);
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 46px;
 }
@@ -143,6 +145,8 @@ button {
 
 /* end footer */
 
+
+
 @media screen and (max-width: 1200px) {
   .nav__bar .nav__links,
   .nav__search {
@@ -156,4 +160,30 @@ button {
   .footer .left__side {
     width: 100%;
   }
+
+  .footer .right__side {
+    width: 100%;
+  }
 }
+
+@media screen and (max-width: 992px) {
+  .footer .right__side {
+    width: 100%;
+  }
+
+  .footer .right__side__items {
+    width: calc((100% - 80px) / 2);
+}
+}
+
+
+@media screen and (max-width: 768px) {
+  .footer .right__side {
+    width: 100%;
+  }
+
+  .footer .right__side__items {
+    width: 100%
+}
+}
+
